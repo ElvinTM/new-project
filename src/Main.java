@@ -1,11 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 5;
-        if (a < 10) {
-            System.out.println("не привет");
-        } else {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        int s = scanner.nextInt();
+        System.out.println("Вы ввели число: " + s);
 
-        }
+        if (s < 10) {
+            System.out.println("Привет");
+        } else {
             System.out.println("Hello world!");
         }
     }
+}
